@@ -33,9 +33,6 @@ app.use(morgan('dev'));
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 app.use(express.static(path.join(__dirname, './client/dist')))
 
-app.use(cors({
-    origin: 'https://mernecomm.netlify.app'
-  }));
 
 // Routes
 app.use("/api/v1/auth", authRoutes);
