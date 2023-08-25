@@ -46,7 +46,7 @@ app.use('*', function (req, res) {
 })
 
 
-PORT = process.env.POTR || 8080
+PORT = process.env.PORT || 8080
 app.listen(PORT, () => {
     console.log(`SERVER IS RUNNING ON ${process.env.DEV_MODE} MODE ON PORT ${PORT}`);
 });
